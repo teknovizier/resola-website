@@ -1,54 +1,388 @@
-<!doctype html>
-<html lang="en" class="h-100" data-bs-theme="auto">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <title>ReSola Projects | Engineering services in EU and abroad</title>
-    <link rel="shortcut icon" href="img/favicon.png">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!-- Custom styles -->
-    <link href="css/style.css" rel="stylesheet">
-  </head>
-  <body class="d-flex h-100 text-bg-dark">
+<!DOCTYPE html>
+<html lang="en">
 
-<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>ReSola Projects • Engineering services in EU and abroad</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
 
-  <header class="mb-auto text-center">
-    <div></div>
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Techie
+  * Template URL: https://bootstrapmade.com/techie-free-skin-bootstrap-3/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <img src="assets/img/resola-logo-horizontal.png" alt="ReSola Projects">
+        <!-- <h1 class="sitename">ReSola Projects</h1> -->
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+    </div>
   </header>
 
-  <main class="px-3">
-    <h1 class="text-center">
-        <img src="img/logo.webp" alt="ReSola Projects" class="logo">
-    </h1>
-    <p class="lead text-center mt-5">Engineering services in EU and abroad</p>
-    <ul class="mx-5 my-5">
-        <li>Structural modelling of temporary structures</li>
-        <li>Static analysis of temporary structures</li>
-        <li>Element calculations</li>
-        <li>3D modelling</li>
-        <li>Detailed drawings</li>
-        <li>Detailed material lists</li>
-    </ul>
-    <p class="lead text-center">E-mail:
-      <a
-      id="email"
-      class="text-white"
-      href="#"
-      onfocus="this.href = 'mailto:' + atob(emailAddress)"
-      >
-      </a>
-    </p>
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
+            <h1>ReSola Projects</h1>
+            <p>Providing reliable solutions for your projects</p>
+            <div class="d-flex">
+              <a href="#about" class="btn-get-started">Get Started</a>
+            </div>
+          </div>
+          <div class="col-lg-6 order-1 order-lg-2 hero-img">
+            <img src="assets/img/hero-img.jpg" class="img-fluid animated" alt="">
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-up" data-aos-delay="100">
+            <img src="assets/img/about.jpg" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-6 order-2 order-lg-1 content" data-aos="fade-up" data-aos-delay="200">
+            <h3>About ReSola Projects</h3>
+            <p>
+              ReSola Projects is an experienced provider of engineering services in the EU and beyond, specializing in the design and analysis of scaffolding and temporary structures.
+              We offer a comprehensive range of services that ensure robust, efficient, and reliable engineering solutions tailored to the specific needs of our clients.
+            </p>
+            <p>
+              We are mostly specialized on design of various types of temporary structures:
+            </p>
+            <ul>
+              <li><i class="bi bi-check-circle"></i> <span>Scaffolding</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Weather protections</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Birdcages</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Different types of temporary structures for factories and maintenance</span></li>
+            </ul>
+
+            <p>
+              Based in Poland, we have successfully delivered a large number of scaffolding projects in Finland, Sweden, Estonia, Latvia, and other EU countries.
+            </p>
+            <p>
+              We are dedicated to providing top-quality engineering services. Our focus on innovation and excellence ensures that we always meet and exceed our clients' expectations.
+              By delivering practical and reliable solutions, we help our clients successfully complete their projects, from start to finish.
+            </p>
+
+            <a href="#services" class="read-more"><span>Our Services</span><i class="bi bi-arrow-right"></i></a>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Services</h2>
+        <p>With 10 years of experience in the engineering sphere across the EU, we offer a range of services, including:</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-xl-4 col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item d-flex">
+              <div class="icon flex-shrink-0"><i class="bi bi-stack"></i></div>
+              <div>
+                <h4 class="title">Structural modelling of scaffolding and temporary structures</h4>
+                <p class="description">We create detailed models that provide a comprehensive view of temporary structures, ensuring accuracy and efficiency in the design process.</p>
+              </div>
+            </div>
+          </div>
+          <!-- End Service Item -->
+
+          <div class="col-xl-4 col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item d-flex">
+              <div class="icon flex-shrink-0"><i class="bi bi-journals"></i></div>
+              <div>
+                <h4 class="title">Static analysis of scaffolding and temporary structures</h4>
+                <p class="description">Our team conducts thorough static analyses to evaluate the stability and safety of temporary structures, ensuring they meet all necessary standards and regulations.</p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-4 col-lg-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item d-flex">
+              <div class="icon flex-shrink-0"><i class="bi bi-file-spreadsheet"></i></div>
+              <div>
+                <h4 class="title">Element calculations</h4>
+                <p class="description">We perform precise element calculations to determine the strength and durability of individual components within a structure, optimizing performance and safety.</p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-4 col-lg-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item d-flex">
+              <div class="icon flex-shrink-0"><i class="bi bi-buildings"></i></div>
+              <div>
+                <h4 class="title">3D modelling</h4>
+                <p class="description">Utilizing advanced 3D modelling techniques, we bring designs to life, offering a clear and detailed visualization of the project before construction begins.</p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-4 col-lg-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-item d-flex">
+              <div class="icon flex-shrink-0"><i class="bi bi-easel2"></i></div>
+              <div>
+                <h4 class="title">Detailed drawings</h4>
+                <p class="description">Our detailed drawings provide essential guidance for construction, ensuring every aspect of the design is clearly communicated and understood.</p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-4 col-lg-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="service-item d-flex">
+              <div class="icon flex-shrink-0"><i class="bi bi-file-text"></i></div>
+              <div>
+                <h4 class="title"><a href="#" class="stretched-link">Detailed material lists</a></h4>
+                <p class="description">We make comprehensive material lists to support the assembling process, making it fast and effective.</p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Portfolio</h2>
+        <p>Here are some examples of the completed projects we’ve worked on:</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-scaffolding">Scaffolding</li>
+          </ul><!-- End Portfolio Filters -->
+
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-scaffolding">
+              <div class="portfolio-content h-100">
+                <a href="assets/img/portfolio/scaffolding-1.png" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/portfolio/scaffolding-1-thumb.jpg" class="img-fluid" alt=""></a>
+                <div class="portfolio-info">
+                  <h4>Roof renovation of a residential building in Finland</h4>
+                  <p>Scaffolding + weather protection</p>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-scaffolding">
+              <div class="portfolio-content h-100">
+                <a href="assets/img/portfolio/scaffolding-2.png" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/portfolio/scaffolding-2-thumb.jpg" class="img-fluid" alt=""></a>
+                <div class="portfolio-info">
+                  <h4>Residential building in Finland</h4>
+                  <p>Scaffolding for plastering works</p>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-scaffolding">
+              <div class="portfolio-content h-100">
+                <a href="assets/img/portfolio/scaffolding-3.png" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/portfolio/scaffolding-3-thumb.jpg" class="img-fluid" alt=""></a>
+                <div class="portfolio-info">
+                  <h4>Storage in Finland</h4>
+                  <p>Temporary storage building for construction site materials</p>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-scaffolding">
+              <div class="portfolio-content h-100">
+                <a href="assets/img/portfolio/scaffolding-4.png" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/portfolio/scaffolding-4-thumb.jpg" class="img-fluid" alt=""></a>
+                <div class="portfolio-info">
+                  <h4>Residential building in Latvia</h4>
+                  <p>Scaffolding for facade renovation</p>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+          </div><!-- End Portfolio Container -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Section -->     
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6">
+          <p>
+            If you're interested in any of our services, please feel free to contact us at your convenience.
+          </p>
+          <p>
+            We would be happy to provide additional information, answer any questions you may have, or discuss how we can tailor our offerings to meet your specific needs.
+          </p>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="row gy-4">
+
+              <div class="col-md-6">
+                <div class="info-item" data-aos="fade" data-aos-delay="400">
+                  <i class="bi bi-envelope"></i>
+                  <h3>Email Us</h3>
+                  <p>
+                    <a href="#" class="email" id="email-visible"></a>
+                  </p>
+                  <p>&nbsp;</p>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="info-item" data-aos="fade" data-aos-delay="500">
+                  <i class="bi bi-clock"></i>
+                  <h3>Open Hours</h3>
+                  <p>Monday - Friday</p>
+                  <p>09:00 - 18:00 CET</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
   </main>
 
-  <footer class="mt-auto text-white-50 text-center">
-    <p>Copyright &copy; 2024 &bull; ReSola Projects</p>
+  <footer id="footer" class="footer dark-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+
+        <div class="col-lg-6 col-md-12 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">ReSola Projects</span>
+          </a>
+          <p>We provide modelling, static analysis, and drawings for temporary structures and scaffolding in the EU and beyond.</p>
+          <div class="social-links d-flex mt-4">
+            <a href="#" class="email"><i class="bi bi-envelope"></i></a>
+            <a href="https://www.linkedin.com/company/resolaprojects/"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-6 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p><span>Copyright &copy; 2024 • ReSola Projects</span></p>
+      <div class="credits">
+        Design based on a template by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+
   </footer>
 
-</div>
-<script src="js/bootstrap.bundle.min.js"></script>
-<script src="js/script.js"></script>
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-  </body>
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
 </html>
