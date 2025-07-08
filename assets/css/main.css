@@ -1156,7 +1156,23 @@ section,
 .portfolio .portfolio-content .portfolio-info h4 {
   font-size: 18px;
   font-weight: 600;
+  padding-left: 30px;
   padding-right: 50px;
+}
+
+.portfolio .portfolio-content .portfolio-info h4.flag {
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: auto 20px; 
+  filter: saturate(0.8);
+}
+
+.portfolio .portfolio-content .portfolio-info h4.flag-finland {
+  background-image: url("../img/flags/finland.png");
+}
+
+.portfolio .portfolio-content .portfolio-info h4.flag-latvia {
+  background-image: url("../img/flags/latvia.png");
 }
 
 .portfolio .portfolio-content .portfolio-info h4 a {
