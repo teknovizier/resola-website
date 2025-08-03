@@ -1171,8 +1171,16 @@ section,
   filter: saturate(0.8);
 }
 
+.portfolio .portfolio-content .portfolio-info h4.flag-denmark {
+  background-image: url("../img/flags/denmark.png");
+}
+
 .portfolio .portfolio-content .portfolio-info h4.flag-finland {
   background-image: url("../img/flags/finland.png");
+}
+
+.portfolio .portfolio-content .portfolio-info h4.flag-iceland {
+  background-image: url("../img/flags/iceland.png");
 }
 
 .portfolio .portfolio-content .portfolio-info h4.flag-latvia {
