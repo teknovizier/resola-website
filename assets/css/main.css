@@ -851,7 +851,12 @@ section,
   margin-bottom: 0;
 }
 
-.about .content .read-more {
+.portfolio .portfolio-link-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.about .content .read-more, .portfolio .portfolio-link {
   background: var(--gray-color);
   color: var(--contrast-color);
   font-family: var(--heading-font);
@@ -866,21 +871,22 @@ section,
   justify-content: center;
 }
 
-.about .content .read-more i {
+.about .content .read-more i, .portfolio .portfolio-link i {
   font-size: 18px;
   margin-left: 5px;
   line-height: 0;
   transition: 0.3s;
 }
 
-.about .content .read-more:hover {
+.about .content .read-more:hover, .portfolio .portfolio-link:hover {
   background: color-mix(in srgb, var(--gray-color), white 25%);
   padding-right: 19px;
 }
 
-.about .content .read-more:hover i {
+.about .content .read-more:hover i, .portfolio .portfolio-link:hover i {
   margin-left: 10px;
 }
+
 
 /*--------------------------------------------------------------
 # Stats Section
@@ -1103,6 +1109,10 @@ section,
   margin: 0 auto;
   list-style: none;
   text-align: center;
+}
+
+.portfolio-details-page .portfolio .portfolio-filters {
+  padding-bottom: 60px;
 }
 
 .portfolio .portfolio-filters li {

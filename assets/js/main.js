@@ -2,6 +2,7 @@
 * ReSola Projects specific code
 */
 
+//
 const emailAddress = atob("c2VydmljZXNAcmVzb2xhcHJvamVjdHMuY29t");
 
 document.querySelectorAll('.email').forEach((emailLink) => {
@@ -15,6 +16,33 @@ let emailLinkVisible = document.getElementById("email-visible");
 if (emailLinkVisible) {
   emailLinkVisible.innerHTML = emailAddress;
 }
+
+//
+document.addEventListener("DOMContentLoaded", function() {
+  // Only proceed if body has "index-page" class
+  if (!document.body.classList.contains('index-page')) return;
+
+  // Select all portfolio items
+  const items = document.querySelectorAll('.portfolio-item');
+
+  if (items.length < 4) return; // If less than four, just show them
+
+  // Pick four random items
+  let selectedItems = [];
+  while (selectedItems.length < 4 && items.length > 0) {
+    const randomIndex = Math.floor(Math.random() * items.length);
+    const item = items[randomIndex];
+    if (!selectedItems.includes(item)) {
+      selectedItems.push(item);
+    }
+  }
+
+  // Hide all
+  items.forEach(item => item.style.display = 'none');
+
+  // Show only the two selected
+  selectedItems.forEach(item => item.style.display = '');
+});
 
 
 
