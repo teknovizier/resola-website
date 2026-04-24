@@ -1,8 +1,9 @@
 /**
-* ReSola Projects specific code
-*/
+ * Resola Projects
+ * Modern Steel & Glass Theme
+ */
 
-//
+// Email obfuscation
 const emailAddress = atob("c2VydmljZXNAcmVzb2xhcHJvamVjdHMuY29t");
 
 document.querySelectorAll('.email').forEach((emailLink) => {
@@ -17,17 +18,13 @@ if (emailLinkVisible) {
   emailLinkVisible.innerHTML = emailAddress;
 }
 
-//
+// Homepage portfolio randomizer
 document.addEventListener("DOMContentLoaded", function() {
-  // Only proceed if body has "index-page" class
   if (!document.body.classList.contains('index-page')) return;
 
-  // Select all portfolio items
   const items = document.querySelectorAll('.portfolio-item');
+  if (items.length < 6) return;
 
-  if (items.length < 6) return; // If less than six, just show them
-
-  // Pick six random items
   let selectedItems = [];
   while (selectedItems.length < 6 && items.length > 0) {
     const randomIndex = Math.floor(Math.random() * items.length);
@@ -37,35 +34,25 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   }
 
-  // Hide all
   items.forEach(item => item.style.display = 'none');
-
-  // Show only the two selected
   selectedItems.forEach(item => item.style.display = '');
 });
 
 
-
 /**
-* Template Name: Techie
-* Template URL: https://bootstrapmade.com/techie-free-skin-bootstrap-3/
-* Updated: Aug 07 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
+ * Site functionality
+ */
 (function() {
   "use strict";
 
-
   /**
-   * Apply .scrolled class to the body as the page is scrolled down
+   * Masthead collapse on scroll
    */
   function toggleScrolled() {
     const selectBody = document.querySelector('body');
     const selectHeader = document.querySelector('#header');
-    if (!selectHeader.classList.contains('scroll-up-sticky') && !selectHeader.classList.contains('sticky-top') && !selectHeader.classList.contains('fixed-top')) return;
-    window.scrollY > 100 ? selectBody.classList.add('scrolled') : selectBody.classList.remove('scrolled');
+    if (!selectHeader) return;
+    window.scrollY > 50 ? selectBody.classList.add('scrolled') : selectBody.classList.remove('scrolled');
   }
 
   document.addEventListener('scroll', toggleScrolled);
@@ -81,7 +68,10 @@ document.addEventListener("DOMContentLoaded", function() {
     mobileNavToggleBtn.classList.toggle('bi-list');
     mobileNavToggleBtn.classList.toggle('bi-x');
   }
-  mobileNavToggleBtn.addEventListener('click', mobileNavToogle);
+
+  if (mobileNavToggleBtn) {
+    mobileNavToggleBtn.addEventListener('click', mobileNavToogle);
+  }
 
   /**
    * Hide mobile nav on same-page/hash links
@@ -91,19 +81,6 @@ document.addEventListener("DOMContentLoaded", function() {
       if (document.querySelector('.mobile-nav-active')) {
         mobileNavToogle();
       }
-    });
-
-  });
-
-  /**
-   * Toggle mobile nav dropdowns
-   */
-  document.querySelectorAll('.navmenu .toggle-dropdown').forEach(navmenu => {
-    navmenu.addEventListener('click', function(e) {
-      e.preventDefault();
-      this.parentNode.classList.toggle('active');
-      this.parentNode.nextElementSibling.classList.toggle('dropdown-active');
-      e.stopImmediatePropagation();
     });
   });
 
@@ -124,22 +101,25 @@ document.addEventListener("DOMContentLoaded", function() {
 
   function toggleScrollTop() {
     if (scrollTop) {
-      window.scrollY > 100 ? scrollTop.classList.add('active') : scrollTop.classList.remove('active');
+      window.scrollY > 50 ? scrollTop.classList.add('active') : scrollTop.classList.remove('active');
     }
   }
-  scrollTop.addEventListener('click', (e) => {
-    e.preventDefault();
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
+
+  if (scrollTop) {
+    scrollTop.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
     });
-  });
+  }
 
   window.addEventListener('load', toggleScrollTop);
   document.addEventListener('scroll', toggleScrollTop);
 
   /**
-   * Animation on scroll function and init
+   * Animation on scroll
    */
   function aosInit() {
     AOS.init({
@@ -152,33 +132,14 @@ document.addEventListener("DOMContentLoaded", function() {
   window.addEventListener('load', aosInit);
 
   /**
-   * Initiate glightbox
+   * GLightbox
    */
   const glightbox = GLightbox({
     selector: '.glightbox'
   });
 
   /**
-   * Init swiper sliders
-   */
-  function initSwiper() {
-    document.querySelectorAll(".init-swiper").forEach(function(swiperElement) {
-      let config = JSON.parse(
-        swiperElement.querySelector(".swiper-config").innerHTML.trim()
-      );
-
-      if (swiperElement.classList.contains("swiper-tab")) {
-        initSwiperWithCustomPagination(swiperElement, config);
-      } else {
-        new Swiper(swiperElement, config);
-      }
-    });
-  }
-
-  window.addEventListener("load", initSwiper);
-
-  /**
-   * Init isotope layout and filters
+   * Isotope layout and filters
    */
   document.querySelectorAll('.isotope-layout').forEach(function(isotopeItem) {
     let layout = isotopeItem.getAttribute('data-layout') ?? 'masonry';
@@ -207,11 +168,10 @@ document.addEventListener("DOMContentLoaded", function() {
         }
       }, false);
     });
-
   });
 
   /**
-   * Frequently Asked Questions Toggle
+   * FAQ Toggle
    */
   document.querySelectorAll('.faq-item h3, .faq-item .faq-toggle').forEach((faqItem) => {
     faqItem.addEventListener('click', () => {
@@ -254,7 +214,7 @@ document.addEventListener("DOMContentLoaded", function() {
       } else {
         navmenulink.classList.remove('active');
       }
-    })
+    });
   }
   window.addEventListener('load', navmenuScrollspy);
   document.addEventListener('scroll', navmenuScrollspy);
