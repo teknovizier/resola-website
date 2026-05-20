@@ -997,10 +997,18 @@ section,
   opacity: 0.7;
 }
 
+.expertise-item .expertise-icon {
+  font-size: 44px;
+  color: var(--accent-steel);
+  line-height: 1;
+  margin-right: 24px;
+  flex-shrink: 0;
+}
+
 .expertise-item h3 {
   font-size: 1.15rem;
   font-weight: 600;
-  margin: 1rem 0;
+  margin: 0 0 1rem 0;
   text-transform: uppercase;
   letter-spacing: 0.06em;
 }
@@ -1254,6 +1262,10 @@ section,
   background-image: url("../img/flags/latvia.png");
 }
 
+.portfolio .portfolio-content .portfolio-info h4.flag-sweden {
+  background-image: url("../img/flags/sweden.png");
+}
+
 .portfolio .portfolio-content .portfolio-info p {
   color: var(--text-secondary);
   font-size: 0.8rem;
@@ -1277,7 +1289,7 @@ section,
   background: var(--bg-surface);
   border: 1px solid var(--border-light);
   border-left: 4px solid var(--accent-dark);
-  padding: 2rem;
+  padding: 1.25rem;
   text-align: center;
   height: 100%;
   transition: border-color 0.3s, box-shadow 0.3s;
@@ -1308,6 +1320,10 @@ section,
   font-size: 14px;
   margin-bottom: 0;
   color: var(--text-secondary);
+}
+
+.contact .contact-text{
+  padding-top: 1.5rem;
 }
 
 .contact .contact-text p {
