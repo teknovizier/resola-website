@@ -1266,6 +1266,10 @@ section,
   background-image: url("../img/flags/sweden.png");
 }
 
+.portfolio .portfolio-content .portfolio-info h4.flag-poland {
+  background-image: url("../img/flags/poland.png");
+}
+
 .portfolio .portfolio-content .portfolio-info p {
   color: var(--text-secondary);
   font-size: 0.8rem;
